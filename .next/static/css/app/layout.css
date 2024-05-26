@@ -1,36 +1,3 @@
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.js","import":"Josefin_Sans","arguments":[{"subsets":["latin"],"display":"swap"}],"variableName":"josefinSans"} ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/* vietnamese */
-@font-face {
-  font-family: '__Josefin_Sans_bc8ab8';
-  font-style: normal;
-  font-weight: 100 700;
-  font-display: swap;
-  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: '__Josefin_Sans_bc8ab8';
-  font-style: normal;
-  font-weight: 100 700;
-  font-display: swap;
-  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
-  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: '__Josefin_Sans_bc8ab8';
-  font-style: normal;
-  font-weight: 100 700;
-  font-display: swap;
-  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}@font-face {font-family: '__Josefin_Sans_Fallback_bc8ab8';src: local("Arial");ascent-override: 72.92%;descent-override: 24.31%;line-gap-override: 0.00%;size-adjust: 102.85%
-}.__className_bc8ab8 {font-family: '__Josefin_Sans_bc8ab8', '__Josefin_Sans_Fallback_bc8ab8';font-style: normal
-}
-
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/_styles/globals.css ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
@@ -560,8 +527,17 @@ video {
       transform: rotate(1turn);
     }
   }
+.fixed {
+  position: fixed;
+}
 .relative {
   position: relative;
+}
+.bottom-6 {
+  bottom: 1.5rem;
+}
+.left-1\/2 {
+  left: 50%;
 }
 .z-10 {
   z-index: 10;
@@ -581,6 +557,9 @@ video {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-24 {
+  margin-bottom: 6rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -609,14 +588,14 @@ video {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-8 {
+  margin-top: 2rem;
+}
 .mt-auto {
   margin-top: auto;
 }
-.mb-24 {
-  margin-bottom: 6rem;
-}
-.mt-8 {
-  margin-top: 2rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 .inline-block {
   display: inline-block;
@@ -639,11 +618,17 @@ video {
 .h-7 {
   height: 1.75rem;
 }
+.h-8 {
+  height: 2rem;
+}
+.h-\[72px\] {
+  height: 72px;
+}
 .h-full {
   height: 100%;
 }
-.h-screen {
-  height: 100vh;
+.min-h-\[400px\] {
+  min-height: 400px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -654,23 +639,30 @@ video {
 .w-\[100px\] {
   width: 100px;
 }
-.w-full {
-  width: 100%;
-}
 .w-\[150\%\] {
   width: 150%;
 }
-.max-w-7xl {
-  max-width: 80rem;
+.w-full {
+  width: 100%;
+}
+.w-8 {
+  width: 2rem;
 }
 .max-w-6xl {
   max-width: 72rem;
+}
+.max-w-7xl {
+  max-width: 80rem;
 }
 .flex-1 {
   flex: 1 1 0%;
 }
 .flex-grow {
   flex-grow: 1;
+}
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-translate-x-3 {
   --tw-translate-x: -0.75rem;
@@ -680,10 +672,18 @@ video {
   --tw-translate-x: -254px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.scale-\[1\.01\] {
+  --tw-scale-x: 1.01;
+  --tw-scale-y: 1.01;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .scale-\[1\.15\] {
   --tw-scale-x: 1.15;
   --tw-scale-y: 1.15;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -721,6 +721,9 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
+.gap-20 {
+  gap: 5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -736,8 +739,8 @@ video {
 .gap-8 {
   gap: 2rem;
 }
-.gap-20 {
-  gap: 5rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 .gap-x-24 {
   -moz-column-gap: 6rem;
@@ -761,6 +764,15 @@ video {
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
+.place-self-center {
+  place-self: center;
+}
+.self-center {
+  align-self: center;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -783,6 +795,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(153 176 199 / var(--tw-border-opacity));
 }
+.border-primary-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(60 84 108 / var(--tw-border-opacity));
+}
 .border-primary-800 {
   --tw-border-opacity: 1;
   border-color: rgb(44 61 79 / var(--tw-border-opacity));
@@ -799,6 +815,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(198 153 99 / var(--tw-bg-opacity));
 }
+.bg-accent-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(183 131 67 / var(--tw-bg-opacity));
+}
 .bg-green-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 101 52 / var(--tw-bg-opacity));
@@ -806,6 +826,14 @@ video {
 .bg-primary-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(183 199 215 / var(--tw-bg-opacity));
+}
+.bg-primary-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 84 108 / var(--tw-bg-opacity));
+}
+.bg-primary-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 61 79 / var(--tw-bg-opacity));
 }
 .bg-primary-900 {
   --tw-bg-opacity: 1;
@@ -827,6 +855,9 @@ video {
   -o-object-position: top;
      object-position: top;
 }
+.p-1 {
+  padding: 0.25rem;
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -838,9 +869,17 @@ video {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .px-5 {
   padding-left: 1.25rem;
@@ -862,9 +901,17 @@ video {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .py-3 {
   padding-top: 0.75rem;
@@ -886,14 +933,17 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
 .pb-4 {
   padding-bottom: 1rem;
 }
+.pt-12 {
+  padding-top: 3rem;
+}
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pb-1 {
-  padding-bottom: 0.25rem;
 }
 .text-center {
   text-align: center;
@@ -913,9 +963,21 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .text-lg {
   font-size: 1.125rem;
@@ -933,16 +995,11 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
 .font-\[350\] {
   font-weight: 350;
+}
+.font-black {
+  font-weight: 900;
 }
 .font-bold {
   font-weight: 700;
@@ -956,14 +1013,18 @@ video {
 .font-semibold {
   font-weight: 600;
 }
-.font-black {
-  font-weight: 900;
-}
 .uppercase {
   text-transform: uppercase;
 }
+.leading-3 {
+  line-height: .75rem;
+}
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+.text-accent-100 {
+  --tw-text-opacity: 1;
+  color: rgb(244 236 225 / var(--tw-text-opacity));
 }
 .text-accent-400 {
   --tw-text-opacity: 1;
@@ -1001,6 +1062,10 @@ video {
   --tw-text-opacity: 1;
   color: rgb(76 107 138 / var(--tw-text-opacity));
 }
+.text-primary-700 {
+  --tw-text-opacity: 1;
+  color: rgb(60 84 108 / var(--tw-text-opacity));
+}
 .text-primary-800 {
   --tw-text-opacity: 1;
   color: rgb(44 61 79 / var(--tw-text-opacity));
@@ -1008,10 +1073,6 @@ video {
 .text-yellow-200 {
   --tw-text-opacity: 1;
   color: rgb(254 240 138 / var(--tw-text-opacity));
-}
-.text-accent-100 {
-  --tw-text-opacity: 1;
-  color: rgb(244 236 225 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -1028,8 +1089,20 @@ video {
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-slate-900 {
+  --tw-shadow-color: #0f172a;
+  --tw-shadow: var(--tw-shadow-colored);
+}
 .blur {
   --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition-all {
@@ -1055,6 +1128,11 @@ video {
 .hover\:bg-accent-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(183 131 67 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(60 84 108 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-primary-900:hover {
@@ -1132,5 +1210,38 @@ video {
   .xl\:gap-14 {
     gap: 3.5rem;
   }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[11].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.js","import":"Josefin_Sans","arguments":[{"subsets":["latin"],"display":"swap"}],"variableName":"josefinSans"} ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* vietnamese */
+@font-face {
+  font-family: '__Josefin_Sans_bc8ab8';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url(/_next/static/media/bdd413190225924c-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Josefin_Sans_bc8ab8';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url(/_next/static/media/0a82ec5629edbafa-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Josefin_Sans_bc8ab8';
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url(/_next/static/media/a3a474206a856479-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Josefin_Sans_Fallback_bc8ab8';src: local("Arial");ascent-override: 72.92%;descent-override: 24.31%;line-gap-override: 0.00%;size-adjust: 102.85%
+}.__className_bc8ab8 {font-family: '__Josefin_Sans_bc8ab8', '__Josefin_Sans_Fallback_bc8ab8';font-style: normal
 }
 
