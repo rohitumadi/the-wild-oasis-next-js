@@ -82,8 +82,11 @@ eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* har
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   deleteBooking: function() { return /* binding */ deleteBooking; },
 /* harmony export */   signInAction: function() { return /* binding */ signInAction; },
-/* harmony export */   signOutAction: function() { return /* binding */ signOutAction; }
+/* harmony export */   signOutAction: function() { return /* binding */ signOutAction; },
+/* harmony export */   updateBooking: function() { return /* binding */ updateBooking; },
+/* harmony export */   updateGuest: function() { return /* binding */ updateGuest; }
 /* harmony export */ });
 /* harmony import */ var next_dist_client_app_call_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/client/app-call-server */ "(app-pages-browser)/./node_modules/next/dist/client/app-call-server.js");
 /* harmony import */ var next_dist_client_app_call_server__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_app_call_server__WEBPACK_IMPORTED_MODULE_0__);
@@ -95,8 +98,11 @@ function __build_action__(action, args) {
   return (0,next_dist_client_app_call_server__WEBPACK_IMPORTED_MODULE_0__.callServer)(action.$$id, args)
 }
 
-/* __next_internal_action_entry_do_not_use__ {"29ee8506b8c765c0b7a31a0ab44078eccac08f96":"signInAction","c41a618ec6451ec793b3b23cd8f37a5bb4b9942d":"signOutAction"} */ var signOutAction = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("c41a618ec6451ec793b3b23cd8f37a5bb4b9942d");
+/* __next_internal_action_entry_do_not_use__ {"29ee8506b8c765c0b7a31a0ab44078eccac08f96":"signInAction","530de0cc15ebfbd797afb848fe2cf698f7576d8f":"updateGuest","99d41cddd8ea4aa6dc4002ebe728bdc2ebe0326b":"updateBooking","c0fc65aeb86f84f5a80c5d38e2076c3fcd462c8a":"deleteBooking","c41a618ec6451ec793b3b23cd8f37a5bb4b9942d":"signOutAction"} */ var signOutAction = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("c41a618ec6451ec793b3b23cd8f37a5bb4b9942d");
 
+var updateBooking = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("99d41cddd8ea4aa6dc4002ebe728bdc2ebe0326b");
+var updateGuest = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("530de0cc15ebfbd797afb848fe2cf698f7576d8f");
+var deleteBooking = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("c0fc65aeb86f84f5a80c5d38e2076c3fcd462c8a");
 var signInAction = (0,private_next_rsc_action_client_wrapper__WEBPACK_IMPORTED_MODULE_1__.createServerReference)("29ee8506b8c765c0b7a31a0ab44078eccac08f96");
 
 
